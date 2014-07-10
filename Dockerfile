@@ -8,4 +8,5 @@ RUN wget https://raw.github.com/pculture/unisubs/staging/schema.xml -O /opt/solr
 
 EXPOSE 8983
 WORKDIR /opt/solr/example
+VOLUME /opt/solr
 CMD ["java", "-jar", "start.jar"]
